@@ -13,12 +13,13 @@ MongoDBConnection()
 
 
 
+
 app.use(cors())
 app.use(express.json())
 
 dotenv.config({ path: "config.env" })
 const PORT = process.env.PORT || 8080
 
-app.use("/added/cart", require("./SERVER/Router/Routes"))
+app.use("/https://crudbackend.netlify.app/", require("./SERVER/Router/Routes"))
 
 app.listen(PORT, () => { console.log(`Server is running on localhost: Port ${PORT}`) })

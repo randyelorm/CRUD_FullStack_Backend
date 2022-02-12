@@ -20,6 +20,6 @@ app.use(express.json())
 dotenv.config({ path: "config.env" })
 const PORT = process.env.PORT || 5000
 
-app.use("/https://crudbackend.netlify.app/", require("./SERVER/Router/Routes"))
+app.use("/", require("./SERVER/Router/Routes"))
 
 app.listen(PORT, () => { console.log(`Server is running on localhost: Port ${PORT}`) })
